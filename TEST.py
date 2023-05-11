@@ -4,8 +4,8 @@ from numpy.polynomial.legendre import legfit
 import matplotlib.pyplot as plt
 
 
-def f(x):
-    return np.sin(x)
+def f(t):
+    return np.cos(t**3) + np.sin(7*t)*1/2 + np.sin(14*t)
 n = 5
 m = n + 1
 x = np.linspace(-1, 1, m)
